@@ -372,7 +372,7 @@ h4 {
 }
 
 .datos {
-    margin: auto;
+    margin: 0 auto;
     margin-bottom: 2rem;
     z-index: 0;
     text-align: center;
