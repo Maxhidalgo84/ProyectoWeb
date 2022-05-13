@@ -58,7 +58,7 @@
                 <a class="nav-link" href="DiaDeCampo.html">Dia de campo</a>
               </li>
             </ul>
-            <a href="Pages/Formulario.html" class="buttonEffect" >Contacto</a>
+            <a href="Formulario.html" class="buttonEffect" >Contacto</a>
           </div>
         </div>
       </nav>
@@ -73,18 +73,20 @@
 
         <label class="contacto" for="nombre">Nombre:</label>
 
-        <input id="nombre" placeholder="Su Respuesta" type="text" />
+        <input class="respuesta" id="nombre" placeholder="Su Respuesta" type="text" />
 
         <label class="contacto" for="">Correo Electronico:</label>
 
-        <input type="email" placeholder="Su Respuesta" />
+        <input class="respuesta" type="email" placeholder="Su Respuesta" />
 
         <label class="contacto" for="check">Consulta por:</label>
-        <div class="select">
-          <input type="radio" name="" id="" />
-          <label class="radio" for="">Eventos</label>
-          <input type="radio" name="" id="" />
-          <label class="radio" for="">Dia de Campo</label>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+          <label class="form-check-label" for="inlineCheckbox1">Eventos</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+          <label class="form-check-label" for="inlineCheckbox2">Dia de Campo</label>
         </div>
         <label class="contacto" for="mensaje">Deje su mensaje:</label>
         <textarea name="" id="mensaje" cols="30" rows="10"></textarea>

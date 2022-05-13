@@ -406,10 +406,6 @@ form legend {
     text-align: center;
 }
 
-form label {
-    margin-top: .5rem;
-}
-
 form .contacto {
     display: block;
 }
@@ -425,7 +421,7 @@ form {
     
 }
 
-form input {
+form .respuesta {
      
     padding: 0.5rem;
     padding-inline-end: 6rem;
@@ -438,7 +434,7 @@ form input {
     
 }
 
-form input:focus {
+form .respuesta:focus {
   background-color: #0e993cd7;
 }
 
