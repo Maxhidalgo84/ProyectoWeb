@@ -366,16 +366,18 @@ h4  {
 
 /* Contacto*/
 
-h4 {
+h5 {
     font-size: 1.5rem;
     color: white;
 }
 
 .datos {
+    width: 70% !important;
     margin: 0 auto;
     margin-bottom: 2rem;
     z-index: 0;
     text-align: center;
+    background-color: rgba(28, 124, 9, 0.219);
 }
 
 .contacto p {
