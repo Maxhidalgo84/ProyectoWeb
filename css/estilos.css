@@ -1,4 +1,3 @@
-
 * {
     margin: 0;
     padding: 0;
@@ -464,6 +463,9 @@ form input {
     
 }
 
+form input:focus {
+  background-color: #0e993cd7;
+}
 
 
 form input::placeholder {
@@ -481,6 +483,9 @@ textarea {
   color: white;
 }
 
+textarea:focus {
+  background-color: #0e993cd7;
+}
 
 .reserva {
     display: block;
