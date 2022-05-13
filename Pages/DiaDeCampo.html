@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" >
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <link rel="icon" href="/img/sunflower.png" >
+    <link rel="stylesheet" href="../css/estilos.css" >
+    <script
+      src="https://kit.fontawesome.com/5a33612f04.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      defer
+      src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Rye&display=swap"
+      rel="stylesheet"
+   />
+   <link
+   rel="stylesheet"
+   href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+ />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rye&display=swap"
+      rel="stylesheet"
+    >
+    <title>Estancia Loma Chica</title>
+  </head>
+  <body class="gridCampo">
+    <header x-data="{ open: false }" class="navList">
+      <h2>Estancia Loma Chica</h2>
+
+      <nav
+        class="navLink nav"
+        class="nav"
+        x-bind:class="open ? 'nav--show' : ''"
+      >
+        <div class="navButton" x-on:click="open = false">
+          <button class="header__button-nav--close">
+            <i class="fa-solid fa-x"></i>
+          </button>
+        </div>
+        <ul>
+          <li><a href="../index.html">Inicio</a></li>
+          <li>
+            <a href="Multimedia.html">Galeria</a>
+            <ul class="submenu">
+              <li><a href="Multimedia.html#imagenes">Imagenes</a></li>
+              <li><a href="Multimedia.html#videos">Videos</a></li>
+            </ul>
+          </li>
+          <li><a href="Eventos.html">Eventos</a></li>
+          <li><a href="DiaDeCampo.html">Dia de campo</a></li>
+        </ul>
+      </nav>
+      <a href="Formulario.html" class="buttonEffect">Contacto</a>
+      <button class="headerButton-nav--open Abrir" x-on:click="open = true">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </header>
+
+    <h3>Dia de Campo</h3>
+    <a href="#" class="whatsappFixed"><i class="fa fa-whatsapp"></i></a>
+    <div class="portada cont">
+      <img class="campoImg" src="../img/campo (3).jpg" alt="" />
+
+      <p class="centrado animate__animated animate__fadeInRight">Tu lugar de descanso</p>
+      <hr />
+    </div>
+
+    <div class="textDia">
+      <p>
+        Conectate con la naturaleza, respirá aire puro y conocé la tradición del
+        campo argentino. Disfrutá los servicios y actividades de la Estancia
+      </p>
+    </div>
+
+    <div class="crono cont">
+      <h4>Cronograma de actividades</h4>
+      <div class="actividades">
+        <p>
+          11.00 Bienvenida con empanadas y bebida (vino, cerveza, gaseosas, agua
+          o jugo)
+          <br />
+          11.30 a 13.30 Cabalgatas o paseos en carruaje en los que podés
+          recorrer la estancia, y conocer un típico campo argentino en actividad
+          (sembrados, vacas, ovejas, caballos, aves)
+          <br />
+          13.30 Almuerzo: asado criollo con cortes de primera calidad, variedad
+          de ensaladas, bebidas, postre y café
+          <br />
+          15.00 Guitarreada
+          <br />
+          16.00 a 17.30 Tiempo libre. Podés disfrutar de todas las
+          instalaciones: piscinas, bicicletas, canchas de fútbol y de voley,
+          mesa de billar, ping pong, metegol, reposeras y más.
+          <br />
+          17.30 Merienda: pastelitos, variedad de tortas y budines caseros con
+          café, té, mate, gaseosas o jugo.
+        </p>
+      </div>
+    </div>
+    <button class="reserva">
+      <a href="Formulario.html"> Hace tu Reserva</a>
+    </button>
+
+    <footer>
+      <section class="redes">
+        <div class="redesCont">
+          <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+          <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+          <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
+          <a href="#" class="whatsapp"><i class="fa fa-whatsapp"></i></a>
+        </div>
+      </section>
+      <section class="footerLinks">
+        <ul>
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="Multimedia.html">Galeria</a></li>
+          <li><a href="Eventos.html">Eventos</a></li>
+          <li><a href="DiaDeCampo.html">Dia de campo</a></li>
+          <li><a href="Formulario.html">Contacto</a></li>
+        </ul>
+        <p>Sitio Web Creado por <strong>Maximo Hidalgo</strong></p>
+      </section>
+    </footer>
+  </body>
+</html>

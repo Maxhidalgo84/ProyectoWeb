@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" >
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <link rel="icon" href="/img/sunflower.png" >
+    <link rel="stylesheet" href="../css/estilos.css" >
+    <script
+      src="https://kit.fontawesome.com/5a33612f04.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      defer
+      src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Rye&display=swap"
+      rel="stylesheet"
+    >
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rye&display=swap"
+      rel="stylesheet"
+    >
+    <title>Estancia Loma Chica</title>
+  </head>
+  <body class="gridForm">
+    <header x-data="{ open: false }" class="navList">
+      <h2>Estancia Loma Chica</h2>
+
+      <nav
+        class="navLink nav"
+        class="nav"
+        x-bind:class="open ? 'nav--show' : ''"
+      >
+        <div class="navButton" x-on:click="open = false">
+          <button class="header__button-nav--close">
+            <i class="fa-solid fa-x"></i>
+          </button>
+        </div>
+        <ul>
+          <li><a href="../index.html">Inicio</a></li>
+          <li>
+            <a href="Multimedia.html">Galeria</a>
+            <ul class="submenu">
+              <li><a href="Multimedia.html#imagenes">Imagenes</a></li>
+              <li><a href="Multimedia.html#videos">Videos</a></li>
+            </ul>
+          </li>
+          <li><a href="Eventos.html">Eventos</a></li>
+          <li><a href="DiaDeCampo.html">Dia de campo</a></li>
+        </ul>
+      </nav>
+      <a href="Formulario.html" class="buttonEffect">Contacto</a>
+      <button class="headerButton-nav--open Abrir" x-on:click="open = true">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </header>
+    <a href="#" class="whatsappFixed"><i class="fa fa-whatsapp"></i></a>
+    <h3>Reservas e informacion</h3>
+    <form class="cont">
+      <div class="field">
+        <legend>Formulario de contacto</legend>
+
+        <label class="contacto" for="nombre">Nombre:</label>
+
+        <input id="nombre" placeholder="Su Respuesta" type="text" />
+
+        <label class="contacto" for="">Correo Electronico:</label>
+
+        <input type="email" placeholder="Su Respuesta" />
+
+        <label class="contacto" for="check">Consulta por:</label>
+        <div class="select">
+          <input type="radio" name="" id="" />
+          <label class="radio" for="">Eventos</label>
+          <input type="radio" name="" id="" />
+          <label class="radio" for="">Dia de Campo</label>
+        </div>
+        <label class="contacto" for="mensaje">Deje su mensaje:</label>
+        <textarea name="" id="mensaje" cols="30" rows="10"></textarea>
+      </div>
+    </form>
+    <div class="cont datos">
+      <img class="campoImg" src="/img/campo (8).jpg" alt="" />
+
+      <h4>Datos</h4>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea quaerat
+        ullam dolore esse dolorem odit hic ex consectetur laudantium nostrum
+        voluptate, doloribus culpa velit similique quos quae impedit est aut?
+      </p>
+    </div>
+    <div class="formUbi">
+      <iframe
+        class="cont formUbi"
+        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d101169.26644073059!2d-57.56486199030763!3d-37.589458237325346!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sar!4v1649805937020!5m2!1ses!2sar"
+        width="480"
+        height="300"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </div>
+    <footer>
+      <section class="redes">
+        <div class="redesCont">
+          <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+          <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+          <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
+          <a href="#" class="whatsapp"><i class="fa fa-whatsapp"></i></a>
+        </div>
+      </section>
+      <section class="footerLinks">
+        <ul>
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="Multimedia.html">Galeria</a></li>
+          <li><a href="Eventos.html">Eventos</a></li>
+          <li><a href="DiaDeCampo.html">Dia de campo</a></li>
+          <li><a href="Formulario.html">Contacto</a></li>
+        </ul>
+        <p>Sitio Web Creado por <strong>Maximo Hidalgo</strong></p>
+      </section>
+    </footer>
+  </body>
+</html>
