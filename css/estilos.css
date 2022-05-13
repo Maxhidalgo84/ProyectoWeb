@@ -36,9 +36,10 @@ body {
     margin-bottom: 2rem;
     z-index: 0;
     text-align: center;
-    z-index: 0;
+    max-width: 80%;
     
 }
+
 
 .portada .video1 {
     width: 80%;
@@ -148,7 +149,7 @@ nav li a:hover {
     color: white;
     text-decoration: none;
     font-family: 'rye';
-    padding: 10px;
+    padding: 5px 10px;
     border-radius: 5px ;
     background-color: rgb(18, 112, 155);
 } 
@@ -162,6 +163,7 @@ nav li a:hover {
 .buttonEffect:hover {
     animation: pulsate 1s ease-in-out;
 }
+
 
 
 /*Acerca de*/
@@ -533,88 +535,6 @@ footer .redes a{
    
 }
 
-/*GRIDS*/
-
-.gridInicio {
-    display: grid;   
-    grid-template-areas: 
-    "header header "   
-    "portada portada "
-    "acerca acerca  "
-    "ubicacion mapa"
-    "footer footer "
-    ;
-    
-	
-}
- .gridForm {
-    display: grid;
-    grid-template-areas: 
-    "header header"
-    "h3 h3 "
-    "datos form"
-    "mapa2  mapa2"
-    "footer footer";
-
-}
-
-
-.gridGaleria {
-    display: grid;
-    grid-template-areas: 
-    "header header "
-    "multi multi"
-    "girasol girasol "
-    "footer footer";
-
-}
-
-.gridCampo {
-    display: grid;
-    grid-template-areas: 
-    "header header "
-    "h3 h3 "
-    "portada portada"
-    "textodia textodia"
-    "crono crono"
-    "reserva reserva"
-    "footer footer";
-}
-
-.gridEventos {
-    display: grid;
-    grid-template-areas: 
-    "header header "
-    "h3 h3 "
-    "portada portada"
-    "textevent textevent"
-    "social corpo"
-    "reserva reserva"
-    "footer footer";
-}
-
-
-
-.formUbi{grid-area: mapa2;}
-form {grid-area: form;}
-h3 {grid-area: h3;} 
-.datos{grid-area: datos;}
-header {grid-area: header;}
-.portada{grid-area: portada;}
-.acercaDe{grid-area: acerca;}
-.ubicacion{grid-area:ubicacion;}        
-.mapa {grid-area:mapa;}
-.multi{grid-area: multi;}
-.textEvent {grid-area: textevent;}
-.girasoles {grid-area: girasol; }
-.social{grid-area: social;}
-.corpo{grid-area: corpo;}
-.textDia {grid-area: textodia;}
-.reserva {grid-area: reserva}
-.crono {grid-area: crono;}
-footer{grid-area: footer;}
-
-
 @media screen and (max-width:1024px){
 
     .submenu {
@@ -622,43 +542,10 @@ footer{grid-area: footer;}
         border: none;
     }
 
+    .portada {
+        max-width: 100%;}
+   
 
-    .gridInicio {
-        display: grid;
-        grid-template-areas: 
-        "header header "   
-        "portada portada "
-        "acerca acerca  "
-        "ubicacion ubicacion"
-        "mapa mapa"
-        "footer footer "
-        ;
-    }
-
-    .gridForm {
-        display: grid;
-        grid-template-areas: 
-        "header header "
-        "h3 h3 "
-        "form form "
-        "datos datos "
-        "mapa2 mapa2 "
-        "footer footer";
-    
-    }
-
-    .gridEventos {
-        display: grid;
-        grid-template-areas: 
-        "header header "
-        "h3 h3 "
-        "portada portada"
-        "textevent textevent"
-        "social social"
-        "corpo corpo"
-        "reserva reserva"
-        "footer footer";
-    }
 
 form {
  
@@ -673,12 +560,12 @@ form {
     header h2{
         font-size: 0.8rem !important;
     }
-    .cont {
-        max-width: 90%;    
-    }
-    .portada .video1{
-        width: 100%;
-    }
+
+  
+
+   .portada .video1 {
+width: 100%;}
+    
     .portada p {
         font-size: 1rem;
     }
@@ -728,6 +615,7 @@ form {
 
       .buttonEffect {
         font-size: .5rem;
+       
     }
      
     }  
