@@ -6,8 +6,10 @@
 }
 
 body {
-    background-color: rgba(20, 104, 3, 0.74);
+    
     font-family: 'sans serif';  
+    background-color: rgba(27, 136, 5, 0.87);
+    
 }
 
 .cont {
@@ -36,16 +38,17 @@ body {
     margin-bottom: 2rem;
     z-index: 0;
     text-align: center;
-    z-index: 0;
-    position: relative;
+    max-width: 80%;
+    
 }
+
 
 .portada .video1 {
     width: 80%;
 }
 
 .campoImg {
-    width: 80%;
+    width: 70%;
 }
 
 .datos .campo8 {
@@ -66,7 +69,7 @@ body {
     top: 50%;
     left: 0;
     right: 0;
-    position: absolute;
+    
     font-size: 2rem;
     text-shadow: 0 0 8px black;
     border-radius: 10px;
@@ -79,24 +82,24 @@ body {
 h3 {
     text-align: center;
     color: white;
-    font-family: 'roboto';
-    font-size: 2rem;
+    font-weight: 800;
+    font-size: 2.5rem;
     padding: 10px;
-    
+}
+
+h4 {
+    color: #fff;
+    font-size:2rem;
 }
 
 
 /* HEADER */
 
-.navList {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+nav {
+    
+    min-height: 80px;
     background: rgb(2,0,36);
     background: linear-gradient(90deg, rgb(37, 71, 40) 0%, rgba(26,121,9,1) 35%, rgb(18, 163, 22) 100%);
-    height: 80px;
-    position: sticky;
-    z-index: 9999;
     background-size: 400% 400%;
     animation: gradiente 5s ease infinite;
 	
@@ -115,33 +118,16 @@ h3 {
 }
 
 header h2 {
-    color: white;
+    color: white !important;
     margin-left: 20px;
     font-family: 'Rye';
     
 
 }
 
-/*nav hambur*/
-
-.hamb1 {
-    display: none;
-}
-.navLink {
-    list-style: none;
-    margin-right: 10%;
-    
-}
-
-
-.navLink li {
-    display: inline-block;
-    padding: 0px 10px;
-}
-
-.navLink li a {
+nav li a {
+    color: white  !important;
     text-decoration: none;
-    color: white;
     font-size: 1rem;
     font-family: 'Rye';
     padding: 10px 5px;
@@ -150,49 +136,25 @@ header h2 {
     
 }
 
-.navLink li a:hover {
+nav li a:hover {
     
     font-size: 1.2rem;
-    
-
 }
 
 .submenu {
-    z-index: 999;
-    background: rgb(2, 145, 2);
+    background-color: rgba(14, 158, 14, 0.89);
 }
 
-
-.navList li ul {
-    display:none;
-    position:absolute;
-    margin-top: .5rem;
-  
+.submenu a:hover {
+    background-color: rgba(14, 158, 14, 0.89); ;
+    
 }
-
-.navList li:hover  ul {
-    display: block;
-    font-size: .5rem; 
-}
-
-.submenu li:hover  a  {
-    font-size: 1rem;
-}
-
-.submenu li { 
-    display: block;
-    padding: 10px;       
-}
-
-
-
 
 .buttonEffect {
     color: white;
     text-decoration: none;
     font-family: 'rye';
-    padding: 10px;
-    margin-right: 2rem;
+    padding: 5px 10px;
     border-radius: 5px ;
     background-color: rgb(18, 112, 155);
 } 
@@ -204,8 +166,10 @@ header h2 {
   }
 
 .buttonEffect:hover {
+    color: white !important;
     animation: pulsate 1s ease-in-out;
 }
+
 
 
 /*Acerca de*/
@@ -408,16 +372,18 @@ h4  {
 
 /* Contacto*/
 
-h4 {
+h5 {
     font-size: 1.5rem;
     color: white;
 }
 
 .datos {
-    margin: auto;
+    width: 70% !important;
+    margin: 0 auto;
     margin-bottom: 2rem;
     z-index: 0;
     text-align: center;
+    background-color: rgba(28, 124, 9, 0.219);
 }
 
 .contacto p {
@@ -448,10 +414,6 @@ form legend {
     text-align: center;
 }
 
-form label {
-    margin-top: .5rem;
-}
-
 form .contacto {
     display: block;
 }
@@ -467,7 +429,7 @@ form {
     
 }
 
-form input {
+form .respuesta {
      
     padding: 0.5rem;
     padding-inline-end: 6rem;
@@ -480,7 +442,7 @@ form input {
     
 }
 
-form input:focus {
+form .respuesta:focus {
   background-color: #0e993cd7;
 }
 
@@ -577,126 +539,17 @@ footer .redes a{
    
 }
 
-/*GRIDS*/
-
-.gridInicio {
-    display: grid;   
-    grid-template-areas: 
-    "header header "   
-    "portada portada "
-    "acerca acerca  "
-    "ubicacion mapa"
-    "footer footer "
-    ;
-    
-	
-}
- .gridForm {
-    display: grid;
-    grid-template-areas: 
-    "header header"
-    "h3 h3 "
-    "datos form"
-    "mapa2  mapa2"
-    "footer footer";
-
-}
-
-
-.gridGaleria {
-    display: grid;
-    grid-template-areas: 
-    "header header "
-    "multi multi"
-    "girasol girasol "
-    "footer footer";
-
-}
-
-.gridCampo {
-    display: grid;
-    grid-template-areas: 
-    "header header "
-    "h3 h3 "
-    "portada portada"
-    "textodia textodia"
-    "crono crono"
-    "reserva reserva"
-    "footer footer";
-}
-
-.gridEventos {
-    display: grid;
-    grid-template-areas: 
-    "header header "
-    "h3 h3 "
-    "portada portada"
-    "textevent textevent"
-    "social corpo"
-    "reserva reserva"
-    "footer footer";
-}
-
-
-
-.formUbi{grid-area: mapa2;}
-form {grid-area: form;}
-h3 {grid-area: h3;} 
-.datos{grid-area: datos;}
-header {grid-area: header;}
-.portada{grid-area: portada;}
-.acercaDe{grid-area: acerca;}
-.ubicacion{grid-area:ubicacion;}        
-.mapa {grid-area:mapa;}
-.multi{grid-area: multi;}
-.textEvent {grid-area: textevent;}
-.girasoles {grid-area: girasol; }
-.social{grid-area: social;}
-.corpo{grid-area: corpo;}
-.textDia {grid-area: textodia;}
-.reserva {grid-area: reserva}
-.crono {grid-area: crono;}
-footer{grid-area: footer;}
-
-
 @media screen and (max-width:1024px){
 
-    .gridInicio {
-        display: grid;
-        grid-template-areas: 
-        "header header "   
-        "portada portada "
-        "acerca acerca  "
-        "ubicacion ubicacion"
-        "mapa mapa"
-        "footer footer "
-        ;
+    .submenu {
+        background-color: rgba(0, 128, 0, 0.021);
+        border: none;
     }
 
-    .gridForm {
-        display: grid;
-        grid-template-areas: 
-        "header header "
-        "h3 h3 "
-        "form form "
-        "datos datos "
-        "mapa2 mapa2 "
-        "footer footer";
-    
-    }
+    .portada {
+        max-width: 100%;}
+   
 
-    .gridEventos {
-        display: grid;
-        grid-template-areas: 
-        "header header "
-        "h3 h3 "
-        "portada portada"
-        "textevent textevent"
-        "social social"
-        "corpo corpo"
-        "reserva reserva"
-        "footer footer";
-    }
 
 form {
  
@@ -705,27 +558,28 @@ form {
    
 }
 
-@media screen and (max-width:400px){
+@media screen and (max-width:576px){
 
-    h2{
-        font-size: 0.8rem ;
+    
+    header h2{
+        font-size: 0.8rem !important;
     }
-    .cont {
-        max-width: 100%;
-        margin: auto;
-        
-    }
-    .portada .video1{
-        width: 100%;
-    }
+
+  
+
+   .portada .video1 {
+width: 100%;}
+    
     .portada p {
         font-size: 1rem;
     }
     h3 {
         font-size: 1.5rem;
     }
+
+   
     article p {
-        max-width: 100%;
+        max-width: 90%;
         font-size: 1rem;
     }
     .footerLinks li {
@@ -734,57 +588,15 @@ form {
         padding: 0.05rem;
     }
 
-    .nav {
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background: rgb(20, 110, 12);
-        transform: translateX(-100vw);
-        transition: 0.5s;
-      }
-
       .gridForm {
           display: block;
       }
+
+ 
     
-      /* Muestra el nav */
-      .nav--show {
-        transform: translateX(0);
-      }
-    
-      .navButton {
-        text-align: end;
-      }
-
-      .Abrir {
-          background-color: rgb(31, 184, 31);
-          color: white;
-          padding: 0.5rem;
-          margin: 1rem;
-          border-radius: 5px;
-          
-      }
-      .navLink {
-        margin:0;
-      }
-      
-      .navLink li{
-          display: block;        
-      }
-
-      .submenu li {
-          display: none;
-      }
-      .buttonEffect{
-          font-size: 0.5rem;
-          margin: auto;
-      }
-
       .campoImg {
-          width: 100%;
-      }
+        width: 90%;
+    }
 
       .textDia {
           font-size: 1rem;
@@ -804,10 +616,15 @@ form {
           padding: 0 0.1rem;
           font-size: 1rem;
       }
+
+      .buttonEffect {
+        font-size: .5rem;
+       
+    }
      
     }  
 
-    @media all and (min-width: 400px) {
+    @media all and (min-width: 576px) {
     
       /* Oculta botón de abrir o cerrar */
       .navButton,
