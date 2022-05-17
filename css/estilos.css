@@ -628,13 +628,4 @@ width: 100%;}
         width: 100%;
      
     }  
-
-    @media all and (min-width: 576px) {
-    
-      /* Oculta botón de abrir o cerrar */
-      .navButton,
-      .headerButton-nav--open {
-        display: none;
-      }
 }
-
