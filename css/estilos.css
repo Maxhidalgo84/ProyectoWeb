@@ -525,7 +525,9 @@ footer .redes a{
    
 } 
 
-  
+.footerLinks ul {
+padding: 0;}
+
 .footerLinks li {
     display: inline-block;
     margin: 0.5rem;    
