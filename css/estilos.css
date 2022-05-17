@@ -6,8 +6,10 @@
 }
 
 body {
-    background-color: rgba(20, 104, 3, 0.74);
+    
     font-family: 'sans serif';  
+    background-color: rgba(27, 136, 5, 0.87);
+    
 }
 
 .cont {
@@ -80,11 +82,14 @@ body {
 h3 {
     text-align: center;
     color: white;
-    font-family: 'roboto';
     font-weight: 800;
     font-size: 2.5rem;
     padding: 10px;
-    
+}
+
+h4 {
+    color: #fff;
+    font-size:2rem;
 }
 
 
@@ -161,6 +166,7 @@ nav li a:hover {
   }
 
 .buttonEffect:hover {
+    color: white !important;
     animation: pulsate 1s ease-in-out;
 }
 
