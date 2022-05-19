@@ -18,6 +18,7 @@
       href="https://fonts.googleapis.com/css2?family=Rye&display=swap"
       rel="stylesheet"
     >
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/estilos.css" >
     <title>Estancia Loma Chica</title>
   </head>
@@ -25,8 +26,9 @@
     <header>
       <nav class="navbar  navbar-expand-lg navbar-light bg-light navList">
         <div class="container-fluid jus ">
+          <img src="/img/giramove.png" class="giraMove" alt="">
           <h2 class="navbar-brand animate__animated animate__fadeIn " href="#">Estancia Loma Chica</h2>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse justify-content-between ms-5 navbar-collapse" id="navbarNav">
@@ -56,6 +58,9 @@
       </nav>
     </header>
     <a href="#" class="whatsappFixed"><i class="iconWhat fa fa-whatsapp"></i></a>
+    
+      
+   
     <div class="container">
         <div class="portada">
           <video
@@ -68,7 +73,7 @@
           <p class="centrado animate__animated animate__fadeInRight">Tu lugar de descanso</p>
          <hr />
         </div> 
-        <article class="acercaDe ">
+        <article class="acercaDe  ">
           <h3>Acerca de nosotros</h3>
           <p>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores
@@ -77,7 +82,7 @@
             sequi? Provident, consectetur necessitatibus?
           </p>
         </article>
-        <div class="row">
+        <div class="row" data-aos="fade-up">
         <div class="ubicacion col-lg-6 col-md-12 mb-5"> 
            <h3>Donde nos encontramos</h3>
             <p>
@@ -117,6 +122,10 @@
          <p>Sitio Web Creado por <strong>Maximo Hidalgo</strong></p>
       </section>
     </footer>
+     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+     <script>
+      AOS.init();
+    </script>
     <script
     src="https://kit.fontawesome.com/5a33612f04.js"
     crossorigin="anonymous"
