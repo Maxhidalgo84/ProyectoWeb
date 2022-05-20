@@ -135,7 +135,7 @@ margin-bottom: -25px;
         transform: translateX(0%);
     }
     to {
-        transform: translateX(100vh);
+        transform: translateX(90vh);
     }
     
 }
