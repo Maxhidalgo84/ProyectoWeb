@@ -388,6 +388,9 @@ h4  {
     margin: 1rem 0;
 }
 .actividades {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
     padding: 0.5rem 0rem;
     margin: auto;
     border-radius: 5px; 
@@ -403,6 +406,19 @@ h4  {
     width: 100%;
     font-size: 1.2rem;
 }
+
+.actividades .btnPromo {
+background-color: #0b9204;    
+margin: 0 10px;}
+
+.promoModal {
+margin:10px;}
+
+.promoModal2 {
+background-image: url(../img/mesh.png);}
+
+.promoModal p {
+font-size: 1.5rem;}
 
 /*Eventos*/
 
