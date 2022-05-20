@@ -18,6 +18,7 @@
       href="https://fonts.googleapis.com/css2?family=Rye&display=swap"
       rel="stylesheet"
     >
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/estilos.css" >
     <title>Estancia Loma Chica</title>
   </head>
@@ -74,7 +75,7 @@
 
     <div class="crono">
       <h4 class="text1">Cronograma de actividades</h4>
-      <div class="actividades">
+      <div class="actividades" data-aos="flip-right">
         <p>
           11.00 Bienvenida con empanadas y bebida (vino, cerveza, gaseosas, agua
           o jugo)
@@ -121,6 +122,10 @@
         <p>Sitio Web Creado por <strong>Maximo Hidalgo</strong></p>
       </section>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+     AOS.init();
+   </script>
     <script
     src="https://kit.fontawesome.com/5a33612f04.js"
     crossorigin="anonymous"
