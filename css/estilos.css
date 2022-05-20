@@ -118,18 +118,24 @@ animation: mover 2s;
 }
 
 .tractor {
-
+display: flex;
+align-self: flex-start;
 width: 50px;
 margin-bottom: -25px;
-animation: tractor 5s;
 }
+
+.arranque button:active ~ .tractor {
+    animation: tractor 5s;
+}
+
+
 
 @keyframes tractor {
     from {
-        transform: translateX(-700%);
+        transform: translateX(0%);
     }
     to {
-        transform: translateX(900%);
+        transform: translateX(100vh);
     }
     
 }
