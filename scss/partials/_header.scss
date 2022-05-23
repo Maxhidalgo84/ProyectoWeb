@@ -1,0 +1,114 @@
+/* HEADER */
+
+header {
+
+    h2 {
+        color: white !important;
+        margin-left: 20px;
+        font-family: $fontrye;
+
+        @media (max-width:576px){
+            font-size: 0.8rem !important;
+        }
+    }
+    nav {
+    min-height: 80px;
+    background: rgb(2, 0, 36);
+    background: $bgnav;
+    background-size: 400% 400%;
+    animation: gradiente 5s ease infinite;
+
+        li {
+             a {
+        color: white  !important;
+        text-decoration: none;
+        font-size: 1rem;
+        font-family: $fontrye;
+        padding: 10px 5px;
+        border-radius: 10px;
+        transition: 0.5s;
+      
+        &:hover {
+          font-size: 1.2rem;
+            }
+            } 
+        }
+        .submenu {
+            background-color: $submenucolor;
+          
+            a:hover {
+              background-color: $submenucolor;
+            }
+            @media screen and (max-width:1024px){
+
+    
+                background-color: rgba(0, 128, 0, 0.021);
+                border: none;
+            } 
+          }
+
+        .giraMove {
+                width: 40px;
+                height: 50px;
+                position: relative;
+                animation: mover 2s;
+                               
+                @keyframes mover {
+                    from {
+                        transform: translateX(-50%) rotate(-180deg); 
+                    }
+                
+                    to {
+                    transform: rotate(0deg);
+                }
+                }
+            
+         @media (max-width:576px){
+                width: 25px;
+                height: 25px;
+                position: relative;
+                animation: mover 2s;
+                }
+          
+            }
+    }    
+    @keyframes gradiente {
+    0% {
+      background-position: 0% 50%;
+    }
+  
+    50% {
+      background-position: 100% 50%;
+    }
+  
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+
+ 
+  .buttonEffect {
+    color: white;
+    text-decoration: none;
+    font-family: $fontrye;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: rgb(18, 112, 155);
+  
+    &:hover {
+      color: white !important;
+      animation: pulsate 1s ease-in-out;
+    }
+
+    @media (max-width:576px){
+        font-size: .5rem;
+    }
+  }
+  
+  @keyframes pulsate {
+    0% {
+      box-shadow: 0 0 30px rgb(236, 236, 236);
+    }
+  }
+}

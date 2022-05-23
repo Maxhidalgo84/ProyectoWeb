@@ -1,0 +1,129 @@
+
+.reserva {
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+    width: 150px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px; 
+    background: #025cb1;
+    font-size: 16px;
+    color: #fff;
+    cursor: pointer;
+    }
+
+.reserva a {
+    color: white;
+    text-decoration: none;
+
+}
+
+
+form {
+
+    width: 400px;
+    text-align: center;
+
+    @media screen and (max-width:1024px){
+        margin: auto;
+    }
+
+    .field {
+    
+        text-align: left;
+        padding: 10px;
+        background-color: #fff;
+        border-radius: 5px; 
+        border: solid 1px #ccc;
+        box-shadow: 1px 2px 5px rgba(0,0,0,.31); 
+        background: #fff; 
+    
+        .boton {
+            text-align: center; 
+        }
+        
+       legend {
+            color: rgb(0, 0, 0);
+            font-size: 1.5rem;
+            text-align: center;
+       }
+
+        .contacto {
+            display: block;
+            p {
+            line-height: 1.5rem;
+            margin: auto;
+            text-align: justify;
+            padding: 1rem;
+            width: 100%;
+            font-size: 1.2rem;
+           }
+           
+        }
+        
+        .respuesta {
+        
+                padding: 0.5rem;
+                padding-inline-end: 6rem;
+                margin: auto;
+                border-radius: 5px; 
+                border: solid 1px #ccc;
+                box-shadow: 1px 2px 5px rgba(0,0,0,.31); 
+                background-color:  rgba(20, 104, 3, 0.74);
+                color: white;
+
+                &:focus {
+                    background-color: $focusform;
+                }
+
+                @media (max-width:576px){
+                    width:100%;}
+            }
+
+        input::placeholder {
+                color: white;
+            }
+
+        textarea {
+            width: 100%;
+            border-radius: 5px; 
+            border: solid 1px #ccc;
+            box-shadow: 1px 2px 5px rgba(0,0,0,.31); 
+            background-color:  rgba(20, 104, 3, 0.74);
+            color: white;
+          
+          
+            &:focus {
+            background-color: $focusform;
+          }
+        }
+    }
+}
+
+
+.datos {
+    width: 70% !important;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    z-index: 0;
+    text-align: center;
+    background-color: rgba(28, 124, 9, 0.219);
+
+    @media (max-width:576px){
+        width: 100% !important;}
+}
+
+
+.formUbi {
+    width: 100%;    
+    text-align: center;
+    margin-top: 1rem;
+    margin: auto;
+    margin-top: 20px;
+    
+    iframe {
+        height: 300px;
+        border-radius: 10px;
+    }
+}

@@ -1,0 +1,79 @@
+.textDia {
+    line-height: 2rem;
+    font-size: 1.5rem;
+    width: 50%;
+    text-align: justify;
+    margin: 2rem auto;
+
+    @media (max-width:576px){     
+      font-size: 1rem;
+      width: 100%;}
+  }
+  
+  .crono {
+    margin: auto;
+
+    h4 {
+        text-align: center;
+        margin: 1rem 0;
+      }
+    .text1 {
+      border-right: 4px solid;
+      margin: 10px auto;
+      width: 22ch;
+      animation: typing 2s steps(22), space 0.5s infinite;
+      animation-delay: 2s;
+      white-space: nowrap;
+      overflow: hidden;
+    }
+
+    .actividades {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: end;
+        padding: 0.5rem 0rem;
+        margin: auto;
+        border-radius: 5px;
+        box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.31);
+        background: #ebebeb;
+      
+        p {
+          line-height: 2rem;
+          margin: auto;
+          text-align: justify;
+          padding: 1rem;
+          width: 100%;
+          font-size: 1.2rem;
+        }
+      
+        .btnPromo {
+          background-color: #0b9204;
+          margin: 0 10px;
+        }
+  }
+  
+}
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+  }
+  
+  @keyframes space {
+    50% {
+      border-color: transparent;
+    }
+  }
+  
+
+  .promoModal {
+    margin: 10px;
+  }
+  
+  .promoModal2 {
+    background-image: url(../img/mesh.png);
+  }
+  
+  .promoModal p {
+    font-size: 1.5rem;
+  }

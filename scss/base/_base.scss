@@ -1,0 +1,46 @@
+@import "variables/variables";
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+   
+  body {
+    font-family: 'sans serif';
+    background-color: $colorfondo;
+  
+    .cont {
+    max-width: 80%;
+    text-align: center;
+    }
+  
+ 
+
+    h3 {
+        text-align: center;
+        color: white;
+        font-weight: 800;
+        font-size: 2.5rem;
+        padding: 10px;
+
+        @media (max-width:576px){ 
+            font-size: $hMob;
+        }
+    }
+
+    h4 {
+        color: #fff;
+        font-size:2rem;
+
+        @media (max-width:576px){ 
+            font-size: $hMob;
+        }
+    }
+
+    h5 {
+        font-size: 1.5rem;
+        color: white;
+    }
+}
