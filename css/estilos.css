@@ -28,6 +28,30 @@ body {
     font-size: 1.5rem;
     color: white; }
 
+.reserva {
+  display: block;
+  margin: auto;
+  text-align: center;
+  margin-top: 10px;
+  width: 200px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: 1px solid white;
+  background-color: #039903;
+  font-size: 1rem;
+  font-family: "Rye";
+  color: white;
+  text-decoration: none;
+  cursor: pointer; }
+  .reserva:hover {
+    background-color: white;
+    color: #039903;
+    animation: pulsate 1s ease-in-out; }
+
+@keyframes pulsate {
+  0% {
+    box-shadow: 0 0 30px #ececec; } }
+
 /* HEADER */
 header h2 {
   color: white;
