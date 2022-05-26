@@ -30,16 +30,16 @@ body {
 
 /* HEADER */
 header h2 {
-  color: white !important;
+  color: white;
   margin-left: 20px;
+  font-size: 1.5rem;
   font-family: "Rye"; }
   @media (max-width: 576px) {
     header h2 {
-      font-size: 0.8rem !important; } }
+      font-size: 0.8rem; } }
 
 header nav {
   min-height: 80px;
-  background: #020024;
   background: linear-gradient(90deg, #254728 0%, #1a7909 35%, #12a316 100%);
   background-size: 400% 400%;
   animation: gradiente 5s ease infinite; }
@@ -93,9 +93,10 @@ header .buttonEffect {
   font-family: "Rye";
   padding: 5px 10px;
   border-radius: 5px;
-  background-color: #12709b; }
+  background-color: #039903; }
   header .buttonEffect:hover {
-    color: white !important;
+    color: #039903;
+    background-color: white;
     animation: pulsate 1s ease-in-out; }
   @media (max-width: 576px) {
     header .buttonEffect {
@@ -147,46 +148,49 @@ footer {
   font-size: 1rem; }
 
 /*PORTADA*/
-.centrado {
-  top: 50%;
-  left: 0;
-  right: 0;
-  font-size: 2rem;
-  text-shadow: 0 0 8px black;
-  border-radius: 10px;
-  padding: 5px;
-  color: #e9ebe9;
-  font-family: "Rye"; }
-
 .portada {
   margin: auto;
   margin-bottom: 1.5rem;
   z-index: 0;
   text-align: center;
-  max-width: 80%; }
-  @media (max-width: 576px) {
-    .portada p {
-      font-size: 1.5rem; } }
-  .portada .video1 {
-    width: 80%; }
-    @media (max-width: 576px) {
-      .portada .video1 {
-        width: 100%; } }
-  @media screen and (max-width: 1024px) {
-    .portada {
-      max-width: 100%; } }
-
-.campoImg {
-  width: 70%; }
-
-.tractor {
-  display: flex;
-  align-self: flex-start;
-  width: 50px;
-  margin-bottom: -25px; }
-
-.arranque button:active ~ .tractor {
-  animation: tractor 5s; }
+  max-width: 100%; }
+  .portada .portadaPrinci {
+    position: relative;
+    height: calc(100vh - 80px);
+    overflow: hidden; }
+    .portada .portadaPrinci .centrado {
+      top: 60%;
+      left: 0;
+      right: 0;
+      font-size: 2rem;
+      text-shadow: 0 0 8px black;
+      border-radius: 10px;
+      padding: 5px;
+      color: #e9ebe9;
+      font-family: "Rye";
+      z-index: 1;
+      position: absolute; }
+      @media (max-width: 576px) {
+        .portada .portadaPrinci .centrado {
+          font-size: 1.5rem;
+          top: 25%; } }
+    .portada .portadaPrinci .video1 {
+      width: 100%; }
+      @media (max-width: 576px) {
+        .portada .portadaPrinci .video1 {
+          width: 100%; } }
+    @media screen and (max-width: 1024px) {
+      .portada .portadaPrinci {
+        max-width: 100%; } }
+    .portada .portadaPrinci .campoImg {
+      width: 70%; }
+  .portada .arranque .tractor {
+    display: flex;
+    align-self: flex-start;
+    width: 50px;
+    margin-bottom: -25px; }
+  .portada .arranque button:active ~ .tractor {
+    animation: tractor 5s; }
 
 @keyframes tractor {
   from {
@@ -197,19 +201,26 @@ footer {
 .reserva {
   display: block;
   margin: auto;
+  text-align: center;
   margin-top: 10px;
-  width: 150px;
-  padding: 10px;
-  border: none;
+  width: 200px;
+  padding: 10px 20px;
   border-radius: 5px;
-  background: #025cb1;
-  font-size: 16px;
-  color: #fff;
-  cursor: pointer; }
-
-.reserva a {
+  border: 1px solid white;
+  background-color: #039903;
+  font-size: 1rem;
+  font-family: "Rye";
   color: white;
-  text-decoration: none; }
+  text-decoration: none;
+  cursor: pointer; }
+  .reserva:hover {
+    background-color: white;
+    color: #039903;
+    animation: pulsate 1s ease-in-out; }
+
+@keyframes pulsate {
+  0% {
+    box-shadow: 0 0 30px #ececec; } }
 
 form {
   width: 400px;
@@ -267,7 +278,7 @@ form {
         background-color: #0e993cd7; }
 
 .datos {
-  width: 70% !important;
+  width: 70%;
   margin: 0 auto;
   margin-bottom: 2rem;
   z-index: 0;
@@ -275,7 +286,7 @@ form {
   background-color: rgba(28, 124, 9, 0.219); }
   @media (max-width: 576px) {
     .datos {
-      width: 100% !important; } }
+      width: 100%; } }
 
 .formUbi {
   width: 100%;
@@ -288,7 +299,7 @@ form {
     border-radius: 10px; }
 
 /*Acerca de*/
-article {
+.acercaDe {
   padding-top: 20px;
   padding: 10px;
   margin: auto;
@@ -296,7 +307,8 @@ article {
   font-weight: 600;
   text-align: center;
   margin-bottom: 2rem; }
-  article p {
+  .acercaDe p {
+    font-size: 1.2rem;
     line-height: 2.5rem;
     margin-bottom: 1rem;
     border: 1px solid black;
@@ -307,18 +319,20 @@ article {
     padding: 2rem;
     border-radius: 10px; }
     @media (max-width: 576px) {
-      article p {
+      .acercaDe p {
         max-width: 90%;
         font-size: 1rem; } }
 
 /* Section ubicacion */
-.donde {
-  align-items: center; }
-
 .ubicacion {
   border: 1px solid black;
   margin-top: 1rem;
-  margin: auto; }
+  margin: auto;
+  max-width: 50%; }
+  @media (max-width: 576px) {
+    .ubicacion {
+      max-width: 90%;
+      font-size: 1.5rem; } }
   .ubicacion p {
     line-height: 3rem;
     margin: auto;

@@ -2,23 +2,32 @@
 .reserva {
     display: block;
     margin: auto;
+    text-align: center;
     margin-top: 10px;
-    width: 150px;
-    padding: 10px;
-    border: none;
+    width: 200px;
+    padding: 10px 20px;
     border-radius: 5px; 
-    background: #025cb1;
-    font-size: 16px;
-    color: #fff;
-    cursor: pointer;
-    }
-
-.reserva a {
+    border: 1px solid white;
+    background-color: $botoncolor;
+    font-size: 1rem;
+    font-family: $fontrye;
     color: white;
     text-decoration: none;
+    cursor: pointer;
+        
+    &:hover {
+        background-color: white;
+        color: $botoncolor  ;
+        animation: pulsate 1s ease-in-out;
+    }
 
+            @keyframes pulsate {
+            0% {
+              box-shadow: 0 0 30px rgb(236, 236, 236);
+            }
+        }
+    
 }
-
 
 form {
 
@@ -103,7 +112,7 @@ form {
 
 
 .datos {
-    width: 70% !important;
+    width: 70%;
     margin: 0 auto;
     margin-bottom: 2rem;
     z-index: 0;
@@ -111,7 +120,7 @@ form {
     background-color: rgba(28, 124, 9, 0.219);
 
     @media (max-width:576px){
-        width: 100% !important;}
+        width: 100%;}
 }
 
 

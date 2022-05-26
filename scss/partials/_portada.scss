@@ -1,68 +1,80 @@
   /*PORTADA*/
 
-  .centrado{
-    top: 50%;
-    left: 0;
-    right: 0; 
-    font-size: $textdescanso;
-    text-shadow: 0 0 8px black;
-    border-radius: 10px;
-    padding: 5px;
-    color: rgb(233, 235, 233);
-    font-family: $fontrye;
-
-}
-
-  .portada {
+.portada {
     margin: auto;
     margin-bottom: 1.5rem;
     z-index: 0;
     text-align: center;
-    max-width: 80%;
     
-    p {
-        @media (max-width:576px){ 
-            font-size: $hMob;
-        }
+    max-width: 100%;
     
-    }
-    .video1 {
-        width: 80%;
+    .portadaPrinci {
+        position: relative;
+        height: calc(100vh - 80px);
+        overflow: hidden;
 
-        @media (max-width:576px){ 
+        .centrado{
+            top: 60%;
+            left: 0;
+            right: 0; 
+            font-size: $textdescanso;
+            text-shadow: 0 0 8px black;
+            border-radius: 10px;
+            padding: 5px;
+            color: rgb(233, 235, 233);
+            font-family: $fontrye;
+            z-index: 1;
+            position: absolute;
+        
+        
+            @media (max-width:576px){ 
+                font-size: $hMob;
+                top: 25%;
+            }
+        
+        }
+        .video1 {
             width: 100%;
+
+            @media (max-width:576px){ 
+                width: 100%;
+            }
+
         }
 
-    }
-
-     @media screen and (max-width:1024px){
-        max-width: 100%;
-    }
-}
-
-.campoImg {
-    width: 70%;
-}
-
-.tractor {
-display: flex;
-align-self: flex-start;
-width: 50px;
-margin-bottom: -25px;
-}
-
-.arranque button:active ~ .tractor {
-    animation: tractor 5s;
-}
+        @media screen and (max-width:1024px){
+            max-width: 100%;
+        }
 
 
-
-@keyframes tractor {
-    from {
-        transform: translateX(0%);
-    }
-    to {
-        transform: translateX(75vh);
-    }
+        .campoImg {
+            width: 70%;
+        }
+    }   
+   
+    .arranque {
+        .tractor {
+            display: flex;
+            align-self: flex-start;
+            width: 50px;
+            margin-bottom: -25px;
+            }
     
+
+        button:active ~ .tractor {
+        animation: tractor 5s;
+        }
+
+
+
+        @keyframes tractor {
+            from {
+                transform: translateX(0%);
+            }
+            to {
+                transform: translateX(75vh);
+            }
+        
+        }
+    }   
 }

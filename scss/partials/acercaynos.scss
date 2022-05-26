@@ -1,7 +1,7 @@
 
     /*Acerca de*/
 
-    article {
+    .acercaDe {
         padding-top: 20px;
         padding: 10px;
         margin: auto;
@@ -9,35 +9,40 @@
         font-weight: 600;
         text-align: center;
         margin-bottom: 2rem;
-  
-    p {
-      line-height: 2.5rem;
-      margin-bottom: 1rem;
-      border: 1px solid black;
-      margin: auto;
-      margin-top: 1rem;
-      max-width: 80%;
-      background: white;
-      padding: 2rem;
-      border-radius: 10px;
-        
-     @media (max-width:576px){   
-            max-width: 90%;
-            font-size: 1rem;
+    
+      p {
+        font-size:$textp ;
+        line-height: 2.5rem;
+        margin-bottom: 1rem;
+        border: 1px solid black;
+        margin: auto;
+        margin-top: 1rem;
+        max-width: 80%;
+        background: white;
+        padding: 2rem;
+        border-radius: 10px;
+          
+      @media (max-width:576px){   
+              max-width: 90%;
+              font-size: $textpmobile;
+          }
         }
-      }
     }
   
+
+
+    
   /* Section ubicacion */
-  
-  .donde {
-    align-items: center;
-  }
-  
   .ubicacion {
     border: 1px solid black;
     margin-top: 1rem;
     margin: auto;
+    max-width: 50%;
+
+    @media (max-width:576px){   
+      max-width: 90%;
+      font-size: $hMob;
+     }
   
     p {
       line-height: 3rem;
@@ -45,7 +50,7 @@
       text-align: justify;
       padding: 1rem;
       width: 100%;
-      font-size: 1.2rem;
+      font-size: $textp;
     }
   }
   
@@ -61,4 +66,3 @@
       border-radius: 10px;
     }
   }
-    
