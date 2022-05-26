@@ -197,7 +197,7 @@ footer {
           top: 25%; } }
     .portada .portadaPrinci .video1 {
       width: 100%; }
-    @media screen and (max-width: 1200px) {
+    @media screen and (max-width: 1368px) {
       .portada .portadaPrinci {
         max-width: 100%;
         height: auto; } }
