@@ -202,7 +202,8 @@ footer {
           width: 100%; } }
     @media screen and (max-width: 1024px) {
       .portada .portadaPrinci {
-        max-width: 100%; } }
+        max-width: 100%;
+        height: 100%; } }
     .portada .portadaPrinci .campoImg {
       width: 70%; }
   .portada .arranque .tractor {
@@ -218,30 +219,6 @@ footer {
     transform: translateX(0%); }
   to {
     transform: translateX(75vh); } }
-
-.reserva {
-  display: block;
-  margin: auto;
-  text-align: center;
-  margin-top: 10px;
-  width: 200px;
-  padding: 10px 20px;
-  border-radius: 5px;
-  border: 1px solid white;
-  background-color: #039903;
-  font-size: 1rem;
-  font-family: "Rye";
-  color: white;
-  text-decoration: none;
-  cursor: pointer; }
-  .reserva:hover {
-    background-color: white;
-    color: #039903;
-    animation: pulsate 1s ease-in-out; }
-
-@keyframes pulsate {
-  0% {
-    box-shadow: 0 0 30px #ececec; } }
 
 form {
   width: 400px;
@@ -480,3 +457,30 @@ aside {
       display: none; } }
   .whatsappFixed .iconWhat {
     margin-top: 14px; }
+
+.galeria {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px 0;
+  align-items: center; }
+  .galeria div {
+    margin: 0.5rem;
+    max-width: 300px;
+    margin: auto; }
+    .galeria div img {
+      max-width: 100%;
+      transition: transform .2s;
+      padding: 5px;
+      border: 1px solid #444444;
+      border-radius: 4px;
+      box-shadow: 3px 3px 10px;
+      text-align: center; }
+      .galeria div img:hover {
+        transform: scale(1.5); }
+
+.girasoles {
+  text-align: center; }
+  .girasoles iframe {
+    max-width: 100%; }
