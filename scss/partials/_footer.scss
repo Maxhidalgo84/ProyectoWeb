@@ -33,29 +33,30 @@ footer {
         background-color: #4dc247;
       }
     }
-  }
   
-  .footerLinks {
-    ul {
-      padding: 0;
-    }
   
-    li {
-      display: inline-block;
-      margin: 0.5rem;
-      padding: 0.5rem;
+    .footerLinks {
+      ul {
+        padding: 0;
+      
+    
+        li {
+          display: inline-block;
+          margin: 0.5rem;
+          padding: 0.5rem;
 
-      @media (max-width:576px){
-        display: inline-block; 
-        margin: 0.05rem;  
-        padding: 0.05rem;
+          @media (max-width:576px){
+            display: inline-block; 
+            margin: 0.05rem;  
+            padding: 0.05rem;
 
+          }
+          a {
+            text-decoration: none;
+            color: $fontfootercolor;
+            font-size: 1rem;
+          }
+        }
       }
     }
-  
-    a {
-      text-decoration: none;
-      color: $fontfootercolor;
-      font-size: 1rem;
-    }
-  }
+}

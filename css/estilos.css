@@ -152,24 +152,21 @@ footer {
     background-color: #833AB4; }
   footer .redes .whatsapp:hover {
     background-color: #4dc247; }
-
-.footerLinks ul {
-  padding: 0; }
-
-.footerLinks li {
-  display: inline-block;
-  margin: 0.5rem;
-  padding: 0.5rem; }
-  @media (max-width: 576px) {
-    .footerLinks li {
+  footer .footerLinks ul {
+    padding: 0; }
+    footer .footerLinks ul li {
       display: inline-block;
-      margin: 0.05rem;
-      padding: 0.05rem; } }
-
-.footerLinks a {
-  text-decoration: none;
-  color: white;
-  font-size: 1rem; }
+      margin: 0.5rem;
+      padding: 0.5rem; }
+      @media (max-width: 576px) {
+        footer .footerLinks ul li {
+          display: inline-block;
+          margin: 0.05rem;
+          padding: 0.05rem; } }
+      footer .footerLinks ul li a {
+        text-decoration: none;
+        color: white;
+        font-size: 1rem; }
 
 /*PORTADA*/
 .portada {
@@ -481,6 +478,5 @@ aside {
   @media (max-width: 576px) {
     .whatsappFixed {
       display: none; } }
-
-.iconWhat {
-  margin-top: 14px; }
+  .whatsappFixed .iconWhat {
+    margin-top: 14px; }
