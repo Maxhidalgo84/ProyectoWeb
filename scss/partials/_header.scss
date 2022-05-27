@@ -2,11 +2,12 @@
 
 header {
 
-    h2 {
+    .logo {
+        @include fontlogo($logo, $fontrye);
         color: white;
         margin-left: 20px;
-        font-size: $logo;
-        font-family: $fontrye;
+        text-decoration: none;
+      
 
         @media (max-width:576px){
             font-size: $logomobile;

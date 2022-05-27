@@ -1,5 +1,8 @@
 @import "base/base";
 @import "variables/variables";
+@import "functions/mixins";
+@import "functions/maps";
+@import "functions/extend";
 @import "partials/header";
 @import "partials/footer";
 @import "partials/portada";
@@ -9,4 +12,5 @@
 @import "partials/eventos.scss";
 @import "partials/whatsappfix";
 @import "partials/galeria";
+
 
