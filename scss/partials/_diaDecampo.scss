@@ -1,9 +1,9 @@
 .textDia {
+    @include texto(justify, 2rem auto);
     line-height: 2rem;
     font-size: 1.5rem;
     width: 50%;
-    text-align: justify;
-    margin: 2rem auto;
+   
 
     @media (max-width:576px){     
       font-size: 1rem;
@@ -14,8 +14,7 @@
     margin: auto;
 
     h4 {
-        text-align: center;
-        margin: 1rem 0;
+      @include texto(center,1rem 0);
       }
     .text1 {
       border-right: 4px solid;
@@ -38,9 +37,8 @@
         background: #ebebeb;
       
         p {
+          @include texto(justify,auto);
           line-height: 2rem;
-          margin: auto;
-          text-align: justify;
           padding: 1rem;
           width: 100%;
           font-size: 1.2rem;

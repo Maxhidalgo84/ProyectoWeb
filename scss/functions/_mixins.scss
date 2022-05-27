@@ -2,3 +2,10 @@
     font-size:$size;
     font-family: $family;
 }
+
+
+@mixin texto($alineacion,$margin) {
+      text-align: $alineacion;
+      margin:$margin ;
+    }
+    

@@ -359,11 +359,11 @@ aside {
     border-radius: 10px; }
 
 .textDia {
+  text-align: justify;
+  margin: 2rem auto;
   line-height: 2rem;
   font-size: 1.5rem;
-  width: 50%;
-  text-align: justify;
-  margin: 2rem auto; }
+  width: 50%; }
   @media (max-width: 576px) {
     .textDia {
       font-size: 1rem;
@@ -392,9 +392,9 @@ aside {
     box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.31);
     background: #ebebeb; }
     .crono .actividades p {
-      line-height: 2rem;
-      margin: auto;
       text-align: justify;
+      margin: auto;
+      line-height: 2rem;
       padding: 1rem;
       width: 100%;
       font-size: 1.2rem; }
