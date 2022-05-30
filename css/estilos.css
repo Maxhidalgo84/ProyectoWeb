@@ -146,7 +146,7 @@ header .buttonEffect {
 
 @keyframes pulsate {
   0% {
-    box-shadow: 0 0 30px #ececec; } }
+    box-shadow: 0 0 30px white; } }
 
 /*FOOTER*/
 footer {
