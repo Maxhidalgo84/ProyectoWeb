@@ -42,10 +42,6 @@
             
         }
 
-
-        .campoImg {
-            width: 70%;
-        }
     }   
    
     .arranque {
@@ -70,7 +66,7 @@
                 transform: translateX(0%);
             }
             to {
-                transform: translateX(100vw);
+                transform: translateX(99vw);
             }
         
         }

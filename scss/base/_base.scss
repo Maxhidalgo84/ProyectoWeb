@@ -44,35 +44,40 @@
         font-size: 1.5rem;
         color: white;
     }
-}
 
-
-.reserva {
-    display: block;
-    margin: auto;
-    text-align: center;
-    margin-top: 10px;
-    width: 200px;
-    padding: 10px 20px;
-    border-radius: 5px; 
-    border: 1px solid white;
-    background-color: $botoncolor;
-    font-size: 1rem;
-    font-family: $fontrye;
-    color: white;
-    text-decoration: none;
-    cursor: pointer;
-        
-    &:hover {
-        background-color: white;
-        color: $botoncolor  ;
-        animation: pulsate 1s ease-in-out;
+    .campoImg {
+        width: 70%;
     }
 
-            @keyframes pulsate {
-            0% {
-              box-shadow: 0 0 30px rgb(236, 236, 236);
-            }
+    .reserva {
+        display: block;
+        margin: auto;
+        text-align: center;
+        margin-top: 10px;
+        width: 200px;
+        padding: 10px 20px;
+        border-radius: 5px; 
+        border: 1px solid white;
+        background-color: $botoncolor;
+        font-size: 1rem;
+        font-family: $fontrye;
+        color: white;
+        text-decoration: none;
+        cursor: pointer;
+            
+        &:hover {
+            background-color: white;
+            color: $botoncolor  ;
+            animation: pulsate 1s ease-in-out;
         }
     
+                @keyframes pulsate {
+                0% {
+                  box-shadow: 0 0 30px rgb(236, 236, 236);
+                }
+            }
+        
+    }
 }
+
+

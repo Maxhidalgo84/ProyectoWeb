@@ -17,36 +17,37 @@ body {
     padding: 10px; }
     @media (max-width: 576px) {
       body h3 {
-        font-size: 1.5rem; } }
+        font-size: 1.2rem; } }
   body h4 {
     color: #fff;
     font-size: 2rem; }
     @media (max-width: 576px) {
       body h4 {
-        font-size: 1.5rem; } }
+        font-size: 1.2rem; } }
   body h5 {
     font-size: 1.5rem;
     color: white; }
-
-.reserva {
-  display: block;
-  margin: auto;
-  text-align: center;
-  margin-top: 10px;
-  width: 200px;
-  padding: 10px 20px;
-  border-radius: 5px;
-  border: 1px solid white;
-  background-color: #039903;
-  font-size: 1rem;
-  font-family: "Rye";
-  color: white;
-  text-decoration: none;
-  cursor: pointer; }
-  .reserva:hover {
-    background-color: white;
-    color: #039903;
-    animation: pulsate 1s ease-in-out; }
+  body .campoImg {
+    width: 70%; }
+  body .reserva {
+    display: block;
+    margin: auto;
+    text-align: center;
+    margin-top: 10px;
+    width: 200px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 1px solid white;
+    background-color: #039903;
+    font-size: 1rem;
+    font-family: "Rye";
+    color: white;
+    text-decoration: none;
+    cursor: pointer; }
+    body .reserva:hover {
+      background-color: white;
+      color: #039903;
+      animation: pulsate 1s ease-in-out; }
 
 @keyframes pulsate {
   0% {
@@ -205,7 +206,7 @@ footer {
       position: absolute; }
       @media (max-width: 576px) {
         .portada .portadaPrinci .centrado {
-          font-size: 1.5rem;
+          font-size: 1.2rem;
           top: 25%; } }
     .portada .portadaPrinci .video1 {
       width: 100%; }
@@ -213,8 +214,6 @@ footer {
       .portada .portadaPrinci {
         max-width: 100%;
         height: auto; } }
-    .portada .portadaPrinci .campoImg {
-      width: 70%; }
   .portada .arranque {
     /* button:active ~ .tractor {
         animation: tractor 5s;
@@ -230,7 +229,7 @@ footer {
   from {
     transform: translateX(0%); }
   to {
-    transform: translateX(100vw); } }
+    transform: translateX(99vw); } }
 
 form {
   width: 400px;
@@ -342,7 +341,7 @@ form {
   @media (max-width: 576px) {
     .ubicacion {
       max-width: 90%;
-      font-size: 1.5rem; } }
+      font-size: 1.2rem; } }
   .ubicacion p {
     line-height: 3rem;
     margin: auto;
