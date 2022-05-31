@@ -96,9 +96,9 @@ header nav {
     header nav li a:hover {
       font-size: 1.2rem; }
   header nav .submenu {
-    background-color: rgba(14, 158, 14, 0.89); }
+    background-color: #0E9E0Ed9; }
     header nav .submenu a:hover {
-      background-color: rgba(14, 158, 14, 0.89); }
+      background-color: #0E9E0Ed9; }
     @media screen and (max-width: 1024px) {
       header nav .submenu {
         background-color: rgba(0, 128, 0, 0.021);
@@ -215,19 +215,22 @@ footer {
         height: auto; } }
     .portada .portadaPrinci .campoImg {
       width: 70%; }
-  .portada .arranque .tractor {
-    display: flex;
-    align-self: flex-start;
-    width: 50px;
-    margin-bottom: -25px; }
-  .portada .arranque button:active ~ .tractor {
-    animation: tractor 5s; }
+  .portada .arranque {
+    /* button:active ~ .tractor {
+        animation: tractor 5s;
+        }*/ }
+    .portada .arranque .tractor {
+      display: flex;
+      align-self: flex-start;
+      width: 50px;
+      margin-bottom: -25px;
+      animation: tractor 10s infinite; }
 
 @keyframes tractor {
   from {
     transform: translateX(0%); }
   to {
-    transform: translateX(75vh); } }
+    transform: translateX(100vw); } }
 
 form {
   width: 400px;
