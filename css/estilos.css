@@ -38,7 +38,7 @@ body {
     margin: auto;
     text-align: center;
     margin-top: 10px;
-    width: 200px;
+    width: 12em;
     padding: 10px 20px;
     border-radius: 5px;
     border: 1px solid white;
@@ -52,6 +52,9 @@ body {
       background-color: white;
       color: #039903;
       animation: pulsate 1s ease-in-out; }
+    @media (max-width: 576px) {
+      body .reserva {
+        font-size: 0.8rem; } }
 
 @keyframes pulsate {
   0% {
@@ -404,9 +407,16 @@ aside {
       padding: 1rem;
       width: 100%;
       font-size: 1.2rem; }
+      @media (max-width: 576px) {
+        .crono .actividades p {
+          font-size: 1rem; } }
     .crono .actividades .btnPromo {
       background-color: #0b9204;
+      width: 8.5em;
       margin: 0 10px; }
+      @media (max-width: 576px) {
+        .crono .actividades .btnPromo {
+          font-size: 0.8rem; } }
 
 @keyframes typing {
   from {

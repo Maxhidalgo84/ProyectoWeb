@@ -42,11 +42,21 @@
           padding: 1rem;
           width: 100%;
           font-size: 1.2rem;
+
+          @media (max-width:576px){ 
+            font-size: $textpmobile;
+        }
         }
       
         .btnPromo {
           background-color: #0b9204;
+          width: 8.5em;
           margin: 0 10px;
+        
+
+          @media (max-width:576px){ 
+          font-size: 0.8rem;
+           }
         }
   }
   

@@ -59,7 +59,7 @@
         margin: auto;
         text-align: center;
         margin-top: 10px;
-        width: 200px;
+        width: 12em;
         padding: 10px 20px;
         border-radius: 5px; 
         border: 1px solid white;
@@ -75,7 +75,12 @@
             color: $botoncolor  ;
             animation: pulsate 1s ease-in-out;
         }
-    
+        
+        @media (max-width:576px){ 
+            
+            font-size: 0.8rem;
+        }
+
                 @keyframes pulsate {
                 0% {
                   box-shadow: 0 0 30px rgb(236, 236, 236);
