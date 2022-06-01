@@ -390,6 +390,26 @@ aside {
     height: 280px;
     border-radius: 10px; }
 
+.comentarios {
+  text-align: center;
+  margin-bottom: 50px; }
+  .comentarios h5 {
+    color: #000000; }
+  .comentarios .comentarios2 {
+    border-bottom: 7px;
+    background: linear-gradient(112deg, #ffffff 30%, #237920 70%);
+    width: 80%;
+    margin: auto; }
+    .comentarios .comentarios2 .imgComentario {
+      border-radius: 50%;
+      width: 100px;
+      height: 100px; }
+    .comentarios .comentarios2 p {
+      margin-top: 10px;
+      font-size: 1.2rem; }
+  .comentarios i {
+    color: #ffcd3c; }
+
 .textDia {
   text-align: justify;
   margin: 2rem auto;
