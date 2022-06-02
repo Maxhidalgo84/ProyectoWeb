@@ -3,9 +3,12 @@ Agregue estos keywords:
 <meta name="keywords" content="Campo, Estancia, escapada, eventos, sociales">
 
 Descripcion:
+Se agrego en todas las paginas, ejemplo:
 
  <meta name="description"
     content="Estancia Loma Chica es una Estancia a solo 45mins de Mar del Plata. Disfrute de un día de campo y relaje por completo!">
+      <meta name="description"
+    content="Estancia Loma Chica es una Estancia a solo 45mins de Mar del Plata. Disfrute de un día de campo y relaje por completo! Contacto y reservas">
 
 Cambie estos titulos, antes solo dia el nombre Estancia loma Chica, ahora:
 index.html =>      <title>INICIO - Estancia Loma Chica</title>
