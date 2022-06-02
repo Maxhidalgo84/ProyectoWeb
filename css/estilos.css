@@ -181,7 +181,6 @@ footer {
           footer .footerLinks ul li a {
             font-size: 1rem; } }
 
-/*PORTADA*/
 .portada {
   margin: 0;
   margin-bottom: 1.5rem;
@@ -214,6 +213,25 @@ footer {
       .portada .portadaPrinci {
         max-width: 100%;
         height: auto; } }
+  .portada .portadaPrinci2 {
+    position: relative;
+    overflow: hidden; }
+    .portada .portadaPrinci2 .centrado {
+      top: 60%;
+      left: 0;
+      right: 0;
+      font-size: 2rem;
+      text-shadow: 0 0 8px black;
+      border-radius: 10px;
+      padding: 5px;
+      color: #e9ebe9;
+      font-family: "Rye";
+      z-index: 1;
+      position: absolute; }
+      @media (max-width: 576px) {
+        .portada .portadaPrinci2 .centrado {
+          font-size: 1.2rem;
+          top: 25%; } }
   .portada .arranque {
     /* button:active ~ .tractor {
         animation: tractor 5s;

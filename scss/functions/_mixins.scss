@@ -8,4 +8,27 @@
       text-align: $alineacion;
       margin:$margin ;
     }
+  
+ @mixin centrado {
+      .centrado{
+        top: 60%;
+        left: 0;
+        right: 0; 
+        font-size: $textdescanso;
+        text-shadow: 0 0 8px black;
+        border-radius: 10px;
+        padding: 5px;
+        color: #e9ebe9;
+        font-family: $fontrye;
+        z-index: 1;
+        position: absolute;
+    
+    
+        @media (max-width:576px){ 
+            font-size: $hMob;
+            top: 25%;
+        }
+      }  
+  }
+
     
