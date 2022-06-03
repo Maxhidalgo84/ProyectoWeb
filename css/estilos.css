@@ -192,6 +192,11 @@ footer {
         @media (max-width: 576px) {
           footer .footerLinks ul li a {
             font-size: 1rem; } }
+  footer .footerLinks .spanDatos {
+    font-size: 1.2rem; }
+    @media (max-width: 576px) {
+      footer .footerLinks .spanDatos {
+        font-size: 0.8rem; } }
   footer .footerLinks p {
     margin-top: 10px; }
 
@@ -412,7 +417,7 @@ aside {
       font-size: 1.2rem; }
       @media (max-width: 576px) {
         .comentarios .comentarios2 p {
-          font-size: 0.5rem; } }
+          font-size: 1rem; } }
   .comentarios i {
     color: #ffcd3c; }
 

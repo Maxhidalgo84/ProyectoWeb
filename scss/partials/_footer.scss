@@ -63,7 +63,14 @@ footer {
           }
         }
       }
-
+      
+      .spanDatos{
+          font-size: $textp;
+            
+        @media (max-width:576px){
+                font-size: 0.8rem;}
+      
+      }
       p {
         margin-top: 10px;
       }   
