@@ -36,7 +36,7 @@ footer {
     .footerLinks {
       ul {
         padding: 0;
-      
+        margin-bottom: -0.2rem;
     
         li {
           display: inline-block;
@@ -63,5 +63,11 @@ footer {
           }
         }
       }
+
+      p {
+        margin-top: 10px;
+      }   
     }
+
+  
 }

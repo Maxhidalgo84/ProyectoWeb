@@ -91,7 +91,13 @@
       p {
       
       margin-top: 10px;
-      font-size: $textp;}
+      font-size: $textp;
+
+      @media (max-width:576px){   
+        font-size: $textpmobile;
+       }
+      } 
+
     }
     i {
     color: #ffcd3c;}

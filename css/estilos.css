@@ -177,7 +177,8 @@ footer {
         font-size: 1rem;
         padding: 5px 10px; } }
   footer .footerLinks ul {
-    padding: 0; }
+    padding: 0;
+    margin-bottom: -0.2rem; }
     footer .footerLinks ul li {
       display: inline-block;
       margin: 0.5rem;
@@ -191,6 +192,8 @@ footer {
         @media (max-width: 576px) {
           footer .footerLinks ul li a {
             font-size: 1rem; } }
+  footer .footerLinks p {
+    margin-top: 10px; }
 
 /*PORTADA*/
 .portada {
@@ -407,6 +410,9 @@ aside {
     .comentarios .comentarios2 p {
       margin-top: 10px;
       font-size: 1.2rem; }
+      @media (max-width: 576px) {
+        .comentarios .comentarios2 p {
+          font-size: 1rem; } }
   .comentarios i {
     color: #ffcd3c; }
 
