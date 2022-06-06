@@ -34,6 +34,8 @@
     
    
     .arranque {
+
+        
         
         .tractor {
             display: flex;
@@ -48,16 +50,13 @@
         animation: tractor 5s;
         }*/
 
-
-
         @keyframes tractor {
             from {
                 transform: translateX(0%);
             }
             to {
-                transform: translateX(99vw);
+                transform: translateX(80vw);
             }
-        
         }
     }   
 }
