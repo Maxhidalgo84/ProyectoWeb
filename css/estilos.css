@@ -9,22 +9,23 @@ body {
   body .cont {
     max-width: 80%;
     text-align: center; }
-  body h3 {
+  body h1 {
     text-align: center;
     color: white;
     font-weight: 800;
     font-size: 2.5rem;
     padding: 10px; }
     @media (max-width: 576px) {
-      body h3 {
+      body h1 {
         font-size: 1.2rem; } }
-  body h4 {
+  body h2 {
+    text-align: center;
     color: #fff;
     font-size: 2rem; }
     @media (max-width: 576px) {
-      body h4 {
+      body h2 {
         font-size: 1.2rem; } }
-  body h5 {
+  body h3 {
     font-size: 1.5rem;
     color: white; }
   body .campoImg {
@@ -401,13 +402,14 @@ aside {
 .comentarios {
   text-align: center;
   margin-bottom: 50px; }
-  .comentarios h5 {
-    color: #000000; }
   .comentarios .comentarios2 {
     border-bottom: 7px;
     background: linear-gradient(112deg, #ffffff 30%, #237920 70%);
     width: 80%;
     margin: auto; }
+    .comentarios .comentarios2 .testiNombre {
+      font-size: 1.5rem;
+      color: #000000; }
     .comentarios .comentarios2 .imgComentario {
       border-radius: 50%;
       width: 100px;
@@ -517,7 +519,7 @@ aside {
       @media (max-width: 576px) {
         .social .textEventos p, .corpo .textEventos p {
           padding: 0 0.1rem;
-          font-size: 1rem; } }
+          font-size: 0.8rem; } }
 
 .whatsappFixed {
   position: fixed;
