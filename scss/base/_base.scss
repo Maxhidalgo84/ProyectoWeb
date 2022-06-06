@@ -46,6 +46,13 @@
 
     .campoImg {
         width: 70%;
+        height: calc(100vh - 200px);
+    
+
+    @media (max-width:567px){
+        max-width: 100%;
+        height: auto; }  
+       
     }
 
     .campoImg2 {
