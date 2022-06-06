@@ -9,18 +9,18 @@
    
     .portadaPrinci {
         position: relative;
-        height: calc(100vh - 80px);
         overflow: hidden;
         @include centrado;
 
         .video1 {
             width: 100%;
+            height: calc(100vh - 140px);
+
+            @media (max-width:567px){
+                max-width: 100%;
+                height: auto; }  
         }
 
-         @media screen and (max-width:1368px){
-            max-width: 100%;
-            height: auto;   
-        }
     }    
 
     

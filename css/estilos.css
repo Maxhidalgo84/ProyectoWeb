@@ -209,7 +209,6 @@ footer {
   max-width: 100%; }
   .portada .portadaPrinci {
     position: relative;
-    height: calc(100vh - 80px);
     overflow: hidden; }
     .portada .portadaPrinci .centrado {
       top: 60%;
@@ -228,11 +227,12 @@ footer {
           font-size: 1.2rem;
           top: 25%; } }
     .portada .portadaPrinci .video1 {
-      width: 100%; }
-    @media screen and (max-width: 1368px) {
-      .portada .portadaPrinci {
-        max-width: 100%;
-        height: auto; } }
+      width: 100%;
+      height: calc(100vh - 140px); }
+      @media (max-width: 567px) {
+        .portada .portadaPrinci .video1 {
+          max-width: 100%;
+          height: auto; } }
   .portada .portadaPrinci2 {
     position: relative;
     overflow: hidden; }
