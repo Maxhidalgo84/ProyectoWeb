@@ -52,7 +52,12 @@
 
 
         @media (max-width:568px) {
-            grid-template-columns:repeat(3,1fr);}
+            grid-template-columns:repeat(3,1fr);
+            .gridImg {
+                height: 200px;
+            }
+        
+        }
         
      
     } 
