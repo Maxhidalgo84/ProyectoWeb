@@ -79,6 +79,7 @@
         &:hover {
             background-color: white;
             color: $botoncolor  ;
+            border: 1px solid $botoncolor;
             animation: pulsate 1s ease-in-out;
         }
         
