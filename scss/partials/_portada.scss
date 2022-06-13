@@ -32,7 +32,7 @@
     }   
 
     
-    
+ /*Tractor*/   
    
     .arranque {
 
@@ -46,11 +46,6 @@
             animation: tractor 10s infinite;
             }
     
-
-       /* button:active ~ .tractor {
-        animation: tractor 5s;
-        }*/
-
         @keyframes tractor {
             from {
                 transform: translateX(0%);

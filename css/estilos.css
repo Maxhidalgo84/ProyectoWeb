@@ -36,17 +36,6 @@ body {
   body h5 {
     color: white;
     font-family: "Domine"; }
-  body .campoImg {
-    width: 70%;
-    height: calc(100vh - 200px); }
-    @media (max-width: 567px) {
-      body .campoImg {
-        max-width: 100%;
-        height: auto; } }
-  body .campoImg2 {
-    width: 100%;
-    height: 100%;
-    overflow: hidden; }
   body .reserva {
     display: block;
     margin: auto;
@@ -221,7 +210,8 @@ footer {
   margin-bottom: 1.5rem;
   z-index: 0;
   text-align: center;
-  max-width: 100%; }
+  max-width: 100%;
+  /*Tractor*/ }
   .portada .portadaPrinci {
     position: relative;
     overflow: hidden; }
@@ -267,16 +257,12 @@ footer {
         .portada .portadaPrinci2 .centrado {
           font-size: 1.2rem;
           top: 25%; } }
-  .portada .arranque {
-    /* button:active ~ .tractor {
-        animation: tractor 5s;
-        }*/ }
-    .portada .arranque .tractor {
-      display: flex;
-      align-self: flex-start;
-      width: 50px;
-      margin-bottom: -25px;
-      animation: tractor 10s infinite; }
+  .portada .arranque .tractor {
+    display: flex;
+    align-self: flex-start;
+    width: 50px;
+    margin-bottom: -25px;
+    animation: tractor 10s infinite; }
 
 @keyframes tractor {
   from {
@@ -307,13 +293,6 @@ form {
       text-align: center; }
     form .field .contacto {
       display: block; }
-      form .field .contacto p {
-        line-height: 1.5rem;
-        margin: auto;
-        text-align: justify;
-        padding: 1rem;
-        width: 100%;
-        font-size: 1.2rem; }
     form .field .respuesta {
       padding: 0.5rem;
       padding-inline-end: 6rem;
@@ -351,6 +330,7 @@ form {
     .datos {
       width: 100%; } }
 
+/*Mapa*/
 .formUbi {
   width: 100%;
   text-align: center;
@@ -419,6 +399,7 @@ aside {
     height: 280px;
     border-radius: 10px; }
 
+/* Opiniones */
 .comentarios {
   text-align: center;
   margin-bottom: 50px; }
@@ -445,6 +426,7 @@ aside {
   .comentarios i {
     color: #ffcd3c; }
 
+/*section dia de campo y eventos*/
 .opciones {
   text-align: center; }
   .opciones img {
@@ -477,16 +459,14 @@ aside {
       font-size: 1rem;
       width: 100%; } }
 
+/*Cronograma de actividades*/
 .crono {
   margin: auto; }
-  .crono h4 {
-    text-align: center;
-    margin: 1rem 0; }
   .crono .text1 {
     border-right: 4px solid;
     margin: 10px auto;
-    width: 22ch;
-    animation: typing 2s steps(22), space 0.5s infinite;
+    width: 20ch;
+    animation: typing 2s steps(20), space 0.5s infinite;
     animation-delay: 2s;
     white-space: nowrap;
     overflow: hidden; }
@@ -570,7 +550,7 @@ aside {
       height: 100%;
       object-fit: cover;
       object-position: 50% 50%; }
-    @media (max-width: 568px) {
+    @media (max-width: 576px) {
       .social .grid, .corpo .grid {
         grid-template-columns: repeat(3, 1fr); }
         .social .grid .gridImg, .corpo .grid .gridImg {

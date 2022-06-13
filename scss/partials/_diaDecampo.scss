@@ -1,3 +1,4 @@
+
 .textDia {
     @include texto(justify, 2rem auto);
     line-height: 2rem;
@@ -6,21 +7,19 @@
    
 
     @media (max-width:576px){     
-      font-size: 1rem;
+      font-size: $textpmobile;
       width: 100%;}
   }
   
+/*Cronograma de actividades*/
   .crono {
     margin: auto;
 
-    h4 {
-      @include texto(center,1rem 0);
-      }
     .text1 {
       border-right: 4px solid;
       margin: 10px auto;
-      width: 22ch;
-      animation: typing 2s steps(22), space 0.5s infinite;
+      width: 20ch;
+      animation: typing 2s steps(20), space 0.5s infinite;
       animation-delay: 2s;
       white-space: nowrap;
       overflow: hidden;

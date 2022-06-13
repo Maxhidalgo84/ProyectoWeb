@@ -1,13 +1,12 @@
 
-
 .textEvent {
     line-height: 2rem;
     font-size: 1.2rem;
     text-align: justify;
     margin: 1rem auto;
-
-    @media (max-width:576px){     
-        font-size: 1rem;}
+    
+     @media (max-width:576px){     
+        font-size: 1rem;} 
 
 }
 
@@ -51,7 +50,7 @@
         
 
 
-        @media (max-width:568px) {
+        @media (max-width:576px) {
             grid-template-columns:repeat(3,1fr);
             .gridImg {
                 height: 200px;
