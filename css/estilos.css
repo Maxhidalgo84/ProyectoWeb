@@ -28,6 +28,8 @@ body {
   body h3 {
     font-size: 1.5rem;
     color: white; }
+  body h5 {
+    color: white; }
   body .campoImg {
     width: 70%;
     height: calc(100vh - 200px); }
@@ -556,23 +558,14 @@ aside {
           padding: 0 0.1rem;
           font-size: 0.8rem; } }
 
-.whatsappFixed {
+.whatsappFixed img {
   position: fixed;
   width: 50px;
-  height: 50px;
-  right: 40px;
-  background-color: #4dc247;
-  color: #FFF;
-  border-radius: 50px;
-  text-align: center;
-  font-size: 24px;
-  box-shadow: 2px 2px 3px #999;
+  right: 10px;
   z-index: 100; }
   @media (max-width: 576px) {
-    .whatsappFixed {
-      display: none; } }
-  .whatsappFixed .iconWhat {
-    margin-top: 14px; }
+    .whatsappFixed img {
+      width: 30px; } }
 
 .galeria {
   margin-top: 50px;
