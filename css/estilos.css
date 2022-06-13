@@ -1,35 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;0,700;1,400;1,600&family=Domine&family=Montserrat&family=Roboto:wght@300&family=Rye&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;0,700;1,400;1,600&family=Domine&family=Montserrat&family=Roboto:wght@300&family=Rye&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box; }
 
 body {
-  font-family: 'sans serif';
+  font-family: "Alegreya", serif;
   background: radial-gradient(circle, #62a74d 23%, #3e8445 79%); }
-  body .cont {
-    max-width: 80%;
-    text-align: center; }
   body h1 {
     text-align: center;
     color: white;
-    font-weight: 800;
+    font-weight: 300;
     font-size: 2.5rem;
-    padding: 10px; }
+    padding: 10px;
+    font-family: "Rye"; }
     @media (max-width: 576px) {
       body h1 {
         font-size: 1.2rem; } }
   body h2 {
     text-align: center;
     color: #fff;
-    font-size: 2rem; }
+    font-size: 2rem;
+    font-family: "Domine"; }
     @media (max-width: 576px) {
       body h2 {
         font-size: 1.2rem; } }
   body h3 {
     font-size: 1.5rem;
-    color: white; }
+    color: white;
+    font-family: "Domine"; }
+    @media (max-width: 576px) {
+      body h3 {
+        font-size: 1.2rem; } }
   body h5 {
-    color: white; }
+    color: white;
+    font-family: "Domine"; }
   body .campoImg {
     width: 70%;
     height: calc(100vh - 200px); }
@@ -360,11 +366,10 @@ form {
   padding-top: 20px;
   padding: 10px;
   margin: auto;
-  font-family: 'roboto';
-  font-weight: 600;
   text-align: center;
   margin-bottom: 2rem; }
   .acercaDe p {
+    font-style: italic;
     font-size: 1.2rem;
     line-height: 2.5rem;
     margin-bottom: 1rem;
@@ -377,8 +382,9 @@ form {
     border-radius: 10px; }
     @media (max-width: 576px) {
       .acercaDe p {
-        max-width: 90%;
-        font-size: 1rem; } }
+        font-size: 1rem;
+        line-height: 1.5rem;
+        max-width: 100%; } }
 
 /* Section ubicacion */
 .ubicacion {
@@ -397,12 +403,17 @@ form {
     padding: 1rem;
     width: 100%;
     font-size: 1.2rem; }
+    @media (max-width: 576px) {
+      .ubicacion p {
+        font-size: 1rem; } }
 
 aside {
   text-align: center;
   margin-top: 1rem;
   margin: auto;
   margin-top: 20px; }
+  aside .mapa {
+    max-width: 80%; }
   aside iframe {
     width: 350px;
     height: 280px;
@@ -418,6 +429,7 @@ aside {
     border-radius: 15px 50px;
     margin: auto; }
     .comentarios .comentarios2 .testiNombre {
+      font-style: italic;
       font-size: 1.5rem;
       color: #000000; }
     .comentarios .comentarios2 .imgComentario {
@@ -432,6 +444,27 @@ aside {
           font-size: 1rem; } }
   .comentarios i {
     color: #ffcd3c; }
+
+.opciones {
+  text-align: center; }
+  .opciones img {
+    height: 200px; }
+  .opciones a {
+    text-decoration: none;
+    margin-top: 10px;
+    position: relative;
+    display: inline-block; }
+    .opciones a::after, .opciones a::before {
+      content: '';
+      position: absolute;
+      width: 70px;
+      height: 2px;
+      background-color: white;
+      top: 45%; }
+    .opciones a::after {
+      left: -70px; }
+    .opciones a::before {
+      right: -70px; }
 
 .textDia {
   text-align: justify;
@@ -500,10 +533,13 @@ aside {
 
 .promoModal p {
   font-size: 1.5rem; }
+  @media (max-width: 576px) {
+    .promoModal p {
+      font-size: 1rem; } }
 
 .textEvent {
   line-height: 2rem;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   text-align: justify;
   margin: 1rem auto; }
   @media (max-width: 576px) {
