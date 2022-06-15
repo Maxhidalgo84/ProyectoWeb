@@ -447,6 +447,14 @@ aside {
       left: -70px; }
     .opciones a::before {
       right: -70px; }
+    .opciones a h5 {
+      padding: 5px;
+      border: 1px solid white;
+      border-radius: 25px; }
+      .opciones a h5:hover {
+        background-color: white;
+        color: black;
+        box-shadow: 2px 5px rgba(0, 0, 0, 0.5); }
 
 .textDia {
   text-align: justify;
