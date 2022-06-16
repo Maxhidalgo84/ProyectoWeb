@@ -535,7 +535,7 @@ aside {
       font-size: 1rem; } }
 
 .social, .corpo {
-  margin: auto; }
+  margin: 10px auto; }
   .social .grid, .corpo .grid {
     display: grid;
     max-width: 700px;
